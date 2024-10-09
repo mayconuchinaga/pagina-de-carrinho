@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaCarrinho.css">
+    <title>Carrinho</title>
+</head>
+<body>
+   <main>
+    <section class="carrinho">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Tamanho</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/la roche vitamina c.png" class="foto"><h5>La Roche Posay Vitamina C</h5></td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantidade">
+                    </td>
+                    <td>
+                        <form class="opcoes-compra">
+                            <label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>15ml</option>
+                                <option>30ml</option>
+                                <option>50ml</option>
+                            </select>
+                    </td>
+                    <td class="preco-unitario">R$ 199,99</td>
+                    <td class="preco-total">R$ 199,99</td>
+                    <td>
+                        <button class="remover-produto">Remover</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/la roche.png" class="foto"><h5>Serum Ultra Concentrado La Roche Posay</h5></td>
+                    <td>
+                        <input type="number" value="2" min="1" class="quantidade">
+                    </td>
+                    <td>
+                        <form class="opcoes-compra">
+                            <label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>15ml</option>
+                                <option>30ml</option>
+                                <option>50ml</option>
+                            </select>
+                    </td>
+                    <td class="preco-unitario">R$ 180,00</td>
+                    <td class="preco-total">R$ 360,00</td>
+                    <td>
+                        <button class="remover-produto">Remover</button>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+
+                <div class="total-final">
+                    <h3>Total Final: <span id="total-final">R$ 110,00</span></h3>
+                </div>
+                </section>
+                </main>
+
+                <script src="paginaCarrinho.js"></script>
+</body>
+</html>
